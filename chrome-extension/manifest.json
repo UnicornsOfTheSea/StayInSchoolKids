@@ -1,5 +1,5 @@
  {
-    "name": "Stay in School Kids",
+    "name": "Stay in School Kids!",
     "version": "1.0",
     "description": "Stay on top of your homework",
     "permissions": ["declarativeContent", "storage"],
