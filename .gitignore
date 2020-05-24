@@ -3,5 +3,5 @@
 .vscode/
 
 # Generated files
-website/public/app.js
+website/public/js/
 website/node_modules
