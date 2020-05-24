@@ -1,11 +1,30 @@
 /* eslint-disable require-jsdoc */
 import React, {Component} from 'react';
 
+import Assignments from './components/Assignments';
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-
+      assignments: [
+        {
+          name: "Essay",
+          due: "05/24/2020"
+        },
+        {
+          name: "Math Exercises",
+          due: "05/25/2020"
+        },
+        {
+          name: "Lab Report",
+          due: "05/26/2020"
+        },
+        {
+          name: "History Worksheet",
+          due: "05/27/2020"
+        },
+      ]
     };
   }
   render() {
@@ -18,21 +37,13 @@ class App extends Component {
           </p>
         </div>
         <div className="section">
-          <h2 className="title is-2">Upcoming assignments</h2>
-          <div class="card">
-            <div class="card-content">
-              <p class="title is-4">
-                Essay
-              </p>
-              <p class="subtitle is-6">
-                Due: 05/24/2020
-              </p>
+          <div className="container centered">
+            <h2 className="title is-2">Upcoming assignments</h2>
+            <div className="columns is-centered is-mobile">
+              <div className="column has-text-centered">
+                <Assignments assignments={this.state.assignments} />
+              </div>
             </div>
-            <footer class="card-footer">
-              <a href="#" class="card-footer-item">Completed</a>
-              <a href="#" class="card-footer-item">Edit</a>
-              <a href="#" class="card-footer-item">Delete</a>
-            </footer>
           </div>
         </div>
       </div>
