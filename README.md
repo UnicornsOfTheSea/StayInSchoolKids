@@ -1,5 +1,5 @@
 # StayInSchoolKids!-
-OpenHacks hackathon demo app to keep track of your homework assignments
+OpenHacks hackathon demo app to keep track of your homework assignments from diffferent websites.
 
 # The website 
 
@@ -26,7 +26,7 @@ npm run dev:start
 npm run dev:build
 ```
 
-# The chrome extension
+# The Chrome extension
 
 ## To load up on Google Chrome Browser
 
@@ -35,3 +35,4 @@ npm run dev:build
 - Toggle `developer mode on`
 - Click on `load unpacked` and select chrome-extension from unzipped repo folder
 - Navigate to [schoology](https://www.schoology.com) 
+- The extension icon will be active, you can click on it
