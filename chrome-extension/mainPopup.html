@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <style>
-      .header {
-        display: flex;
-        align-items: center;
-	  }
-      .menu {
-        align-items: center;
-        display: grid;
-        grid-template-columns: 1fr 10fr 1fr;
-        grid-template-rows: auto;
-        grid-template-areas: "logo title close"
-      }
-      .menu-item-1 {
-        grid-area: logo;
-      }
-      .menu-item-2 {
-        justify-self: center;
-        grid-area: title;
-      }
-      .menu-item-3 {
-        grid-area: close;
-      }
+    <head>
+        <style>
+            .header {
+            display: flex;
+            align-items: center;
+	        }
+            .menu {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 1fr 10fr 1fr;
+            grid-template-rows: auto;
+            grid-template-areas: "logo title close"
+            }
+            .menu-item-1 {
+            grid-area: logo;
+            }
+            .menu-item-2 {
+            justify-self: center;
+            grid-area: title;
+            }
+            .menu-item-3 {
+            grid-area: close;
+            }
 
-      .main {
-        display: flex;
-        flex-direction: column;
-	  }
-      .bottom {
-        display: flex;
-      }
+            .main {
+            display: flex;
+            flex-direction: column;
+	        }
+            .bottom {
+            display: flex;
+            }
 
-      table, th, td {
-        border: 1px solid black;
-      }
-      #viewAll {
-        height: 30px;
-        width: 75px;
-      }
-      #addAssign {
-        height: 30px;
-        width: 150px;
-      
-      }
-    </style>
+            table, th, td {
+            border: 1px solid black;
+            }
+            #viewAll {
+            height: 30px;
+            width: 75px;
+            }
+            #addAssign {
+            height: 30px;
+            width: 150px;
+            }
+        </style>
   </head>
   <body>
     <div class="header">
@@ -73,6 +72,34 @@
                     <th>Assignment Name</th>
                     <th>Due Date</th>
                     <th><button id="selectAll">Select All</button></th>
+                </tr>
+                <tr>
+                    <th>Assignment 1</th>
+                    <th>05/24/2020</th>
+                    <th>
+                        <input type="checkbox" 
+                    </th>
+                </tr>
+                <tr>
+                    <th>Assignment 2</th>
+                    <th>05/25/2020</th>
+                    <th>
+                        <input type="checkbox"
+                    </th>
+                </tr>
+                <tr>
+                    <th>Assignment 3</th>
+                    <th>05/26/2020</th>
+                    <th>
+                        <input type="checkbox"
+                    </th>
+                </tr>
+                <tr>
+                    <th>Assignment 4</th>
+                    <th>05/27/2020</th>
+                    <th>
+                        <input type="checkbox"
+                    </th>
                 </tr>
             </table>
         </div>
