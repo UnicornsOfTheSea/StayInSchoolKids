@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AssignmentItem = ({ assignment }) => {
+const AssignmentItem = ({ assignment, source }) => {
   return (
     <div className="tile is-child card">
       <div className="card-content">
@@ -9,6 +9,9 @@ const AssignmentItem = ({ assignment }) => {
         </p>
         <p className="subtitle is-6">
           Due: {assignment.due}
+        </p>
+        <p className="subtitle is-6">
+          Source: {source}
         </p>
       </div>
       <footer className="card-footer">

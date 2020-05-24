@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build": "webpack -d --watch",
     "dev:start": "nodemon server.js",
-    "build": "webpack -p"
+    "build": "webpack -p",
+    "deploy": "npm run build && firebase deploy"
   },
   "author": "UnicornsOfTheSea",
   "license": "ISC",
