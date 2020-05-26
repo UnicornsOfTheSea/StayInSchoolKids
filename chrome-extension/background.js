@@ -6,10 +6,10 @@ chrome.runtime.onInstalled.addListener(function() {
     chrome.declarativeContent.onPageChanged.addRules([{
       conditions: [
         new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostContains: '.classroom.google.com'},
+          pageUrl: {hostContains: 'classroom.google.com'},
         }),
         new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostContains: '.schoology.com/home'},
+          pageUrl: {hostContains: 'schoology.com', pathEquals: '/home'},
         }),
       ],
           actions: [new chrome.declarativeContent.ShowPageAction()]
