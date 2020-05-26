@@ -44,6 +44,7 @@
             width: 150px;
             }
         </style>
+       
   </head>
   <body>
     <div class="header">
@@ -64,44 +65,48 @@
 
     <div class="main">
         <div class="heading">
-            <h2 style= "text-align:center;">Select Assignments:</h2>
+            <h2 style="text-align:center;">Select Assignments:</h2>
         </div>
         <div class="table-wrapper">
-            <table style="width:100%">
-                <tr>
-                    <th>Assignment Name</th>
-                    <th>Due Date</th>
-                    <th><button id="selectAll">Select All</button></th>
-                </tr>
-                
+            <table
+                id="dTable"
+                class="dynamic-table" 
+                style="width:100%">
+                <thead>
+                    <tr>
+                        <th>Assignment Name</th>
+                        <th>Due Date</th>
+                        <th><button id="selectAll">Select All</button></th>
+                    </tr>
+                </thead>
                 <!--
                     <tr>
-                        <th>Essay</th>
-                        <th>05/24/2020</th>
-                        <th>
+                        <td>Essay</th>
+                        <td>05/24/2020</th>
+                        <td>
                             <input type="checkbox"> 
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>Math Exercises</th>
-                        <th>05/25/2020</th>
-                        <th>
+                        <td>Math Exercises</td>
+                        <td>05/25/2020</td>
+                        <td>
                             <input type="checkbox">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>Lab report</th>
-                        <th>05/26/2020</th>
-                        <th>
+                        <td>Lab report</td>
+                        <td>05/26/2020</td>
+                        <td>
                             <input type="checkbox">
-                        </th>
+                        </td>
                     </tr>
                     <tr>
-                        <th>History Worksheet</th>
-                        <th>05/27/2020</th>
-                        <th>
+                        <td>History Worksheet</td>
+                        <td>05/27/2020</td>
+                        <td>
                             <input type="checkbox">
-                        </th>
+                        </td>
                     </tr> 
                 -->
             </table>
@@ -115,5 +120,6 @@
             </div>
         </div>
     </div>
+    <script src="mainPopup.js"></script>
   </body>
 </html>
