@@ -41,10 +41,6 @@ const renderAssignments = () => {
 			let text = assignments[i][property];
 			let textNode = document.createTextNode(text);
 			newCell.appendChild(textNode);
-		// for (var j = 0; j < this.col.length; j++) {
-		// 	var tabCell = tr.insertCell(-1);
-		// 	tabCell.innerHTML = this.arrPack[i][this.col[j]];
-		// }
 		}
 	}
 } 
