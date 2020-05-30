@@ -60,21 +60,5 @@ const renderAssignments = () => {
 				newCell.appendChild(label);
 		}
 	}
-	// for (let i=0; i = assignments.length; i++) {
-	// 	let newRow = table.insertRow(-1); 
-	// 	let newCell = newRow.insertCell(0);
-	// 	var check = document.createElement("input");
-	// 	var label = document.createElement("label");
-
-	// 	check.setAttribute('type', 'checkbox');
-	// 	check.setAttribute('value', 'no');
-	// 	check.setAttribute('id', 'assignmentCheck' + i);
-
-	// 	label.setAttribute('for', 'assignmentCheck' + i);
-    // 	label.appendChild(document.createTextNode('Yes'));
-
-	// 	newCell.appendChild(check);
-    // 	newCell.appendChild(label);
-	// }
 } 
 renderAssignments();
